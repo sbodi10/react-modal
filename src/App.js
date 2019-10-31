@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Modal from './components/modal';
+import './styles/index.css';
 
 function App() {
+  const [displayModal, setDisplayModal] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={() => setDisplayModal(true)}>Open modal</button>
+      <Modal
+        headerContent={'Header content'}
+        mainContent={<textarea rows='8' placeholder={'Enter some text'} />}
+        footerContent={
+          <React.Fragment>
+            <button
+              onClick={() => setDisplayModal(false)}
+            >Cancel</button>
+            <button
+              onClick={() => setDisplayModal(false)}
+            >Confirm</button>
+          </React.Fragment>
+        }
+        displayModal={displayModal}
+        closeModalFunction={() => setDisplayModal(false)}
+      />
     </div>
   );
 }

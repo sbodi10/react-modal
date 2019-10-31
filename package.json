@@ -1,7 +1,8 @@
 {
   "name": "react-modal",
-  "version": "0.1.0",
-  "private": true,
+  "description": "A modal created using react for react",
+  "version": "1.0.0",
+  "private": false,
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
