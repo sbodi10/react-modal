@@ -1,5 +1,5 @@
 {
-  "name": "react-modal",
+  "name": "@sbodi/react-modal",
   "description": "A modal created using react for react",
   "version": "1.0.0",
   "private": false,
