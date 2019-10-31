@@ -1,6 +1,6 @@
-## React Modal
+# React Modal
 
-# Example
+## Example
 ```
  <Modal
    displayModal={displayModal}
@@ -11,7 +11,7 @@
  />
 ```
 
-# Usage
+## Usage
 ```
 function App() {
   const [displayModal, setDisplayModal] = useState(false);
