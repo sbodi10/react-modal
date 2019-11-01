@@ -1,7 +1,18 @@
-# React Modal
+# @sbodi/react-modal
+
+Modal component built using hooks for ReactJS
+
+![version](https://img.shields.io/badge/version-1.1.3-blue)
+
+## Installation
+
+To install, run the below command
+```
+$ npm install @sbodi/react-modal
+```
 
 ## Example
-```
+```jsx
  <Modal
    displayModal={displayModal}
    closeModalFunction={() => setDisplayModal(false)}
@@ -12,12 +23,15 @@
 ```
 
 ## Usage
-```
+```jsx
+import React, { useState } from 'react';
+import Modal from '@sbodi/react-modal';
+
 function App() {
   const [displayModal, setDisplayModal] = useState(false);
 
   return (
-    <div className="App">
+    <div>
       <button onClick={() => setDisplayModal(true)}>Open modal</button>
       <Modal
         headerContent={'Header content'}

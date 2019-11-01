@@ -15,8 +15,8 @@ function Modal (props) {
       switch (e.keyCode) {
         // Tab
         case 9:
-        // If there's only one element in the modal that's focusable, disable tabbing  
-        if (modalContainer.querySelectorAll(selectablesQuery).length === 1) {
+          // If there's only one element in the modal that's focusable, disable tabbing  
+          if (modalContainer.querySelectorAll(selectablesQuery).length === 1) {
             e.preventDefault();
             break;
           }
@@ -26,7 +26,7 @@ function Modal (props) {
               e.preventDefault();
               focusableEls[0].focus();
             }
-          }else {
+          } else {
             // Wrap around to the beginning if we've hit the last focusable element in the modal
             if (document.activeElement == focusableEls[focusableEls.length - 1]) {
               e.preventDefault();
@@ -40,15 +40,15 @@ function Modal (props) {
     });
   }, []);
   
-  
   // Focus on a modal when it's displayed
   useEffect(function () {
     if (displayModal) {
       const modalContainer = document.querySelector('.modal-container'),
-            focusableEls = Array.prototype.slice.call(modalContainer.querySelectorAll(selectablesQuery));
+      focusableEls = Array.prototype.slice.call(modalContainer.querySelectorAll(selectablesQuery));
       focusableEls[0].focus();
     }
   });
+
   if (displayModal) {
     return (
       <React.Fragment>

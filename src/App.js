@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Modal from './components/modal';
-import './styles/index.css';
+import Modal from './lib/Modal';
+import './lib/index.css';
 
 function App() {
   const [displayModal, setDisplayModal] = useState(false);
