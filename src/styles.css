@@ -1,26 +1,27 @@
 .modal-container {
-    animation-name: appearIn;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-  
-    background-color: white;
-    border: 1px solid #C3D2DF;
-    border-radius: 4px;
-    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
-  
-    display: flex;
-    flex-direction: column;
-  
-    padding: 1.5rem;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 378px;
-    max-height: 90%;
-    width: 550px;
-    max-width: 90%;
-    z-index: 100;
+  animation-name: appearIn;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+
+  background-color: white;
+  border: 1px solid #c3d2df;
+  border-radius: 4px;
+  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 378px;
+  max-height: 90%;
+  width: 550px;
+  max-width: 90%;
+  z-index: 100;
 }
 
 .modal-container header {
@@ -39,27 +40,27 @@
   padding: 0px 5px;
 }
 
-main {
+.modal-container main {
   overflow: scroll;
   margin: 15px 0px;
   flex: 1 0 auto;
 }
 
-footer {
+.modal-container footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-button {
+.modal-container button {
   font-size: 18px;
   text-transform: capitalize;
   font-weight: 400;
 }
 
-textarea {
+.modal-container textarea {
   font-size: 14px;
-  color: #2A3D4C;
+  color: #2a3d4c;
   border: 1px solid #c3d2df;
   border-radius: 2px;
   padding: 0.5rem;
@@ -86,4 +87,3 @@ textarea {
   width: 100%;
   z-index: 95;
 }
-  

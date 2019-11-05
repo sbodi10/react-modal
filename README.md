@@ -1,14 +1,13 @@
 # @sbodi/react-modal
 
-Modal component built using hooks for ReactJS
+> A modal created using react for react
 
-![version](https://img.shields.io/badge/version-1.1.3-blue)
+[![NPM](https://img.shields.io/npm/v/@sbodi/react-modal.svg)](https://www.npmjs.com/package/@sbodi/react-modal) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-## Installation
+## Install
 
-To install, run the below command
-```
-$ npm install @sbodi/react-modal
+```bash
+npm install --save @sbodi/react-modal
 ```
 
 ## Example
@@ -53,3 +52,7 @@ function App() {
   );
 }
 ```
+
+## License
+
+MIT © [sbodi10](https://github.com/sbodi10)

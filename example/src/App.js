@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import Modal from './lib/Modal';
-import './lib/index.css';
+import Modal from '@sbodi/react-modal';
 
-function App() {
+export default () => {
   const [displayModal, setDisplayModal] = useState(false);
 
   return (
-    <div className="App">
+    <div>
       <button onClick={() => setDisplayModal(true)}>Open modal</button>
       <Modal
         headerContent={'Header content'}
@@ -27,5 +26,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
