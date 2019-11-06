@@ -3,6 +3,12 @@
 > A modal created using react for react
 
 [![NPM](https://img.shields.io/npm/v/@sbodi/react-modal.svg)](https://www.npmjs.com/package/@sbodi/react-modal) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![GitHub forks](https://img.shields.io/github/forks/sbodi10/react-modal?style=social)
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+* You have installed React with a version that supports hooks
 
 ## Install
 
@@ -52,6 +58,12 @@ function App() {
   );
 }
 ```
+
+## Contributors
+
+Thanks to the following people who have contributed to this project:
+
+* [@roseg43](https://github.com/roseg43)
 
 ## License
 
